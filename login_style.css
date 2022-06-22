@@ -1,0 +1,220 @@
+:root {
+    /* Color */
+    --red-color: #E50914;
+    --black-color: #181818;
+    --white-color: #FFFFFF;
+    --grey-dark-color: #333333;
+    --grey-light-color: #737373;
+    --blue-color: #0071EB;
+    --yellow-color: #E87C03;
+
+    /* Size */
+    --padding: 20px;
+
+    /* Font-Size */
+    --font-large: 30px;
+    --font-medium: 16px;
+    --font-small: 14px;
+}
+
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey-light-color);
+}
+
+/* headerAndLogin */
+.headerAndLogin {
+    position: relative;
+}
+
+.headerAndLogin .concord-img {
+    width: 2000px;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* header */
+.headerAndLogin .header {
+    display: flex;
+    top: 0%;
+    position: absolute;
+}
+
+.headerAndLogin .header .svg-icon{
+    height: 45px;
+    width: 167px;
+    vertical-align: middle;
+    margin: 20px 30px;
+    fill: var(--red-color);
+}
+
+/* login */
+.headerAndLogin .login {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 650px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--black-color);
+    position: absolute;
+}
+
+.headerAndLogin .login .login-items {
+    padding: 60px;
+}
+
+.headerAndLogin .login .login-items .title {
+    color: var(--white-color);
+    font-size: var(--font-large);
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.headerAndLogin .login .login-items .id {
+    margin-bottom: 20px;
+    padding: 15px 15px 0 15px;
+    font-size: var(--font-medium);
+    background-color: var(--grey-dark-color);
+    width: 100%;
+    height: 50px;
+    color: var(--white-color);
+    border-radius: 5px;
+    border: 0;
+}
+
+.headerAndLogin .login .login-items .id:focus {
+    outline: none;
+    border-bottom: 2px solid var(--yellow-color);
+}
+
+.headerAndLogin .login .login-items .id[placeholder] {
+    padding-bottom: 12px;
+}
+
+.headerAndLogin .login .login-items .password {
+    padding: 15px 15px 0 15px;
+    font-size: var(--font-medium);
+    background-color: var(--grey-dark-color);
+    width: 100%;
+    height: 50px;
+    color: var(--white-color);
+    border-radius: 5px;
+    border: 0;
+}
+
+.headerAndLogin .login .login-items .password:focus {
+    outline: none;
+    border-bottom: 2px solid var(--yellow-color);
+}
+
+.headerAndLogin .login .login-items .password[placeholder] {
+    padding-bottom: 12px;
+}
+
+.headerAndLogin .login .login-items .click {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    font-size: var(--font-medium);
+    border-radius: 5px;
+}
+
+.headerAndLogin .login .login-items .save {
+    margin-top: 12px;
+    color: #B3B3B3;
+    font-size: var(--font-small);
+    border-radius: 5px;
+    accent-color: var(--grey-light-color);
+}
+
+.headerAndLogin .login .login-items .help {
+    margin-left: 57px;
+    color: #B3B3B3;
+    font-size: var(--font-small);
+    text-decoration: none;
+}
+
+.headerAndLogin .login .login-info {
+    color: var(--grey-light-color);
+    font-size: var(--font-small);
+}
+
+.headerAndLogin .login .login-info .notMember {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-medium);
+}
+
+.headerAndLogin .login .login-info .notMember .join {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: var(--white-color);
+}
+
+.headerAndLogin .login .login-info .notRobot {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    padding: 0 70px;
+}
+
+.headerAndLogin .login .login-info .detail {
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.headerAndLogin .login .login-info .detail-google {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    font-size: 13px;
+    padding: 0 70px;
+}
+
+/* Info */
+.info {
+    background-color: var(--black-color);
+    color: var(--grey-light-color);
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+    top: 90%;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+}
+
+.info .inquiry {
+    padding-bottom: 25px;
+    left: -50px;
+}
+
+.info .info-link {
+    padding-bottom: 25px;
+    font-size: var(--font-small);
+}
+
+.info .language {
+    background-color: var(--black-color);
+    color: var(--grey-light-color);
+    padding: 10px 10px 10px 20px;
+}
+
+.info .info-details {
+    padding-top: 15px;
+    font-size: 12px;
+}
